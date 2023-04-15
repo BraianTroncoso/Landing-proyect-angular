@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { video } from '../../interfaces/videos';
 
 @Component({
   selector: 'app-video-grid',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./video-grid.component.css']
 })
 export class VideoGridComponent {
-
+  @Input() videos:video[] = []
+  
+  
 }
