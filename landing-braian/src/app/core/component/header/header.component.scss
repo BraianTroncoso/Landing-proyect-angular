@@ -1,0 +1,17 @@
+@use "./../../../../assets/styles/variables.scss";
+header{
+    background-color: variables.$color-fondo;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    img{
+        width: 50px;
+
+    }
+
+    a{
+        font-weight: bold;
+    
+    }
+}

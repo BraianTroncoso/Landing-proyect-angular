@@ -1,0 +1,9 @@
+
+@use "./../../../../assets/styles/variables.scss";
+
+footer{
+    background-color: variables.$color-fondo;
+    text-align: center;
+    padding: 20px;
+
+}

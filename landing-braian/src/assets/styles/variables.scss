@@ -12,7 +12,7 @@ $color-primario: $color-6;
 $color-primario-claro: color.scale($color-primario,$lightness: 70%);
 $color-primario-oscuro: color.scale($color-primario,$lightness: -30%);
 
-$color-secundario: $color3;
+$color-secundario: $color-3;
 $color-secundario-claro: color.scale($color-secundario,$lightness: 70%);
 $color-secundario-oscuro: color.scale($color-secundario,$lightness: -30%);
 
