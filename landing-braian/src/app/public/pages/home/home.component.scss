@@ -1,0 +1,42 @@
+@use "./../../../../assets/styles/variables.scss";
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+    background-color: variables.$color-fondo;
+    background-image: url("./../../../../assets/img/fondo.jpg");
+    background-size: cover;
+    img{
+        margin: auto;
+        height: 200px;
+        margin-right: 2rem;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    p{
+        margin:1rem 0;
+    }
+    .linkBoton{
+        text-decoration: none;
+        background-color: variables.$color-primario;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: .1s;
+        &:hover{
+            color:variables.$color-texto-invertido;
+            background-color: variables.$color-primario-oscuro;
+        }
+    }
+    a{
+        width: fit-content;
+    }
+}
