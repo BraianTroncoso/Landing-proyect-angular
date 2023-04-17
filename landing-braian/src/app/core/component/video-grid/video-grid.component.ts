@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { video } from '../../interfaces/videos';
 
 @Component({
@@ -7,7 +7,9 @@ import { video } from '../../interfaces/videos';
   styleUrls: ['./video-grid.component.css']
 })
 export class VideoGridComponent {
-  @Input() videos:video[] = []
-  
+  @ViewChild("modal")
+  modal!: ElementRef<HTMLDialogElement>;
+
+  @Input() videos:video[] = [];
   
 }

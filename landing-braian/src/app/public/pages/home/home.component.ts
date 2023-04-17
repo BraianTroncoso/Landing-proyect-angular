@@ -9,7 +9,8 @@ import { VideosService } from 'src/app/core/services/videos.service';
 })
 export class HomeComponent {
 
-  videos:video[] = [];
+
+  videos:video[] = []
   constructor(private VS: VideosService){
 this.VS.getAll().then(res => this.videos = res)
   }
